@@ -16,6 +16,12 @@
       "is_admin": false
     },
     {
+      "id": 2,
+      "nome": "Ana",
+      "senha": "1234",
+      "is_admin": true
+    },
+    {
       "id": 4,
       "nome": "teste",
       "email": "wotoncf@gmail.com",
