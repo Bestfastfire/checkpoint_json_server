@@ -10,7 +10,7 @@ server.use(middlewares)
 server.use(jsonServer.bodyParser)
 
 server.post('/reset', (req, res) => {
-    const dbPath = path.join(__dirname, 'db.json');
+    const dbPath = path.join(__dirname, 'db_backup.json');
     const defaultDb = JSON.parse(fs.readFileSync(dbPath, 'utf-8'));
     Object.keys(defaultDb).forEach((key) => {
         router.db.set(key, defaultDb[key]).write();
@@ -132,7 +132,9 @@ server.delete("/usuarios/:id", (req, res) => {
     const novosUsuarios = db.usuarios.filter((u) => u.id !== id)
     router.db.setState({ ...db, usuarios: novosUsuarios })
 
-    res.status(204).send()
+    res.json({
+        message: "Usuário excluído com sucesso",
+    })
 })
 
 // Endpoint para criar um novo usuário
