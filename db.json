@@ -75,22 +75,6 @@
       "status_request": "idle",
       "justify": "",
       "id": 3
-    },
-    {
-      "id": 4,
-      "justify": ""
-    },
-    {
-      "id": 5,
-      "justify": ""
-    },
-    {
-      "id": 6,
-      "justify": "Esqueci de bater o ponto"
-    },
-    {
-      "id": 7,
-      "justify": ""
     }
   ],
   "working_days": [
@@ -115,7 +99,7 @@
       "id_company": 1,
       "insert_origin": "adjust",
       "justify": "Esqueci de registrar saída",
-      "status_request": "rejected",
+      "status_request": "pending",
       "timestamp": "2025-04-01T08:00:00"
     },
     {
@@ -124,7 +108,7 @@
       "id_user": 1,
       "id_company": 1,
       "insert_origin": "auto",
-      "status_request": "idle",
+      "status_request": "pending",
       "timestamp": "2025-04-01T12:00:00"
     },
     {
@@ -133,7 +117,7 @@
       "id_user": 1,
       "id_company": 1,
       "insert_origin": "auto",
-      "status_request": "idle",
+      "status_request": "pending",
       "timestamp": "2025-04-01T13:00:00"
     },
     {
@@ -142,7 +126,7 @@
       "id_user": 1,
       "id_company": 1,
       "insert_origin": "auto",
-      "status_request": "idle",
+      "status_request": "pending",
       "timestamp": "2025-04-01T18:00:00"
     },
     {
@@ -161,7 +145,7 @@
       "id_user": 2,
       "id_company": 1,
       "insert_origin": "auto",
-      "status_request": "idle",
+      "status_request": "pending",
       "timestamp": "2025-04-02T12:00:00"
     },
     {

@@ -120,6 +120,21 @@ server.get("/usuarios/:id", (req, res) => {
     res.json(user)
 })
 
+server.delete("/usuarios/:id", (req, res) => {
+    const id = Number.parseInt(req.params.id)
+    const db = router.db.getState()
+    const user = db.usuarios.find((u) => u.id === id)
+
+    if (!user) {
+        return res.status(404).json({ error: "Usuário não encontrado" })
+    }
+
+    const novosUsuarios = db.usuarios.filter((u) => u.id !== id)
+    router.db.setState({ ...db, usuarios: novosUsuarios })
+
+    res.status(204).send()
+})
+
 // Endpoint para criar um novo usuário
 server.post("/usuarios", (req, res) => {
     const novoUsuario = req.body
