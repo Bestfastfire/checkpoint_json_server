@@ -1,0 +1,267 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Ana",
+      "senha": "1234",
+      "is_admin": false,
+      "telefone": "739813123",
+      "data_nascimento": "03/05/2000",
+      "genero": "Masculino"
+    },
+    {
+      "id": 2,
+      "nome": "João",
+      "senha": "1234",
+      "is_admin": false
+    },
+    {
+      "id": 4,
+      "nome": "teste",
+      "email": "wotoncf@gmail.com",
+      "cpf": "1234123123",
+      "telefone": "73981460703",
+      "telefoneComercial": "",
+      "genero": "",
+      "data_nascimento": "01/02/2000",
+      "tipo": 1
+    }
+  ],
+  "ponto": [
+    {
+      "id": 1,
+      "id_user": 1,
+      "data": "2025-03-02",
+      "marcacao": [
+        "08:30",
+        "13:00",
+        "14:00",
+        "18:00"
+      ],
+      "resultado": "-00:30",
+      "status_request": "pending",
+      "justify": "Esqueci de bater o ponto"
+    },
+    {
+      "id": 2,
+      "id_user": 1,
+      "data": "2025-03-03",
+      "marcacao": [
+        "09:00",
+        "13:00",
+        "14:00",
+        "18:00"
+      ],
+      "resultado": "00:00",
+      "status_request": "idle",
+      "justify": ""
+    },
+    {
+      "id_user": 1,
+      "data": "2025-05-27",
+      "marcacao": [
+        "16:00",
+        "16:00",
+        "16:00",
+        "16:48"
+      ],
+      "resultado": "-07:12",
+      "status_request": "idle",
+      "justify": "",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "justify": ""
+    },
+    {
+      "id": 5,
+      "justify": ""
+    },
+    {
+      "id": 6,
+      "justify": "Esqueci de bater o ponto"
+    },
+    {
+      "id": 7,
+      "justify": ""
+    }
+  ],
+  "working_days": [
+    {
+      "id": 101,
+      "id_company": 1,
+      "start_date": "2025-04-01",
+      "end_date": "2025-04-01"
+    },
+    {
+      "id": 102,
+      "id_company": 1,
+      "start_date": "2025-04-02",
+      "end_date": "2025-04-02"
+    }
+  ],
+  "point_history": [
+    {
+      "id": 201,
+      "id_working_day": 101,
+      "id_user": 1,
+      "id_company": 1,
+      "insert_origin": "adjust",
+      "justify": "Esqueci de registrar saída",
+      "status_request": "rejected",
+      "timestamp": "2025-04-01T08:00:00"
+    },
+    {
+      "id": 202,
+      "id_working_day": 101,
+      "id_user": 1,
+      "id_company": 1,
+      "insert_origin": "auto",
+      "status_request": "idle",
+      "timestamp": "2025-04-01T12:00:00"
+    },
+    {
+      "id": 203,
+      "id_working_day": 101,
+      "id_user": 1,
+      "id_company": 1,
+      "insert_origin": "auto",
+      "status_request": "idle",
+      "timestamp": "2025-04-01T13:00:00"
+    },
+    {
+      "id": 204,
+      "id_working_day": 101,
+      "id_user": 1,
+      "id_company": 1,
+      "insert_origin": "auto",
+      "status_request": "idle",
+      "timestamp": "2025-04-01T18:00:00"
+    },
+    {
+      "id": 205,
+      "id_working_day": 102,
+      "id_user": 2,
+      "id_company": 1,
+      "insert_origin": "adjust",
+      "justify": "Celular descarregou",
+      "status_request": "approved",
+      "timestamp": "2025-04-02T08:05:00"
+    },
+    {
+      "id": 206,
+      "id_working_day": 102,
+      "id_user": 2,
+      "id_company": 1,
+      "insert_origin": "auto",
+      "status_request": "idle",
+      "timestamp": "2025-04-02T12:00:00"
+    },
+    {
+      "id": 207,
+      "id_working_day": 102,
+      "id_user": 2,
+      "id_company": 1,
+      "insert_origin": "auto",
+      "status_request": "idle",
+      "timestamp": "2025-04-02T13:10:00"
+    },
+    {
+      "id": 208,
+      "id_working_day": 102,
+      "id_user": 2,
+      "id_company": 1,
+      "insert_origin": "auto",
+      "status_request": "idle",
+      "timestamp": "2025-04-02T17:55:00"
+    }
+  ],
+  "solicitacoes": [
+    {
+      "id": 1,
+      "tipo": "ferias",
+      "dataInicio": "2025-05-01",
+      "dataFim": "2025-05-10",
+      "status_request": "rejected",
+      "id_user": 1
+    },
+    {
+      "adiantamentoSalario": false,
+      "adiantamento13": true,
+      "dataInicio": "2025-05-15",
+      "dataFim": "2025-05-22",
+      "status": "Em análise",
+      "tipo": "ferias",
+      "id": 2,
+      "status_request": "rejected",
+      "id_user": 2
+    },
+    {
+      "adiantamentoSalario": false,
+      "adiantamento13": true,
+      "dataInicio": "2025-05-19",
+      "dataFim": "2025-05-26",
+      "status": "Em análise",
+      "tipo": "ferias",
+      "id": 3,
+      "status_request": "approved",
+      "id_user": 3
+    },
+    {
+      "adiantamentoSalario": true,
+      "adiantamento13": true,
+      "dataInicio": "2025-05-22",
+      "dataFim": "2025-05-31",
+      "status": "Em análise",
+      "tipo": "ferias",
+      "status_request": "approved",
+      "id_user": 3,
+      "id": 4
+    },
+    {
+      "adiantamentoSalario": false,
+      "adiantamento13": true,
+      "dataInicio": "2025-05-22",
+      "dataFim": "2025-05-31",
+      "status": "Em análise",
+      "tipo": "ferias",
+      "status_request": "approved",
+      "id_user": 3,
+      "id": 5
+    },
+    {
+      "adiantamentoSalario": false,
+      "adiantamento13": true,
+      "dataInicio": "2025-05-22",
+      "dataFim": "2025-05-31",
+      "status": "Em análise",
+      "tipo": "ferias",
+      "status_request": "rejected",
+      "id_user": 3,
+      "id": 6
+    },
+    {
+      "adiantamentoSalario": false,
+      "adiantamento13": true,
+      "dataInicio": "2025-05-07",
+      "dataFim": "2025-05-21",
+      "status": "Em análise",
+      "tipo": "ferias",
+      "status_request": "pending",
+      "id_user": 3,
+      "id": 7
+    },
+    {
+      "adiantamentoSalario": false,
+      "adiantamento13": true,
+      "dataInicio": "2025-05-27",
+      "dataFim": "2025-05-31",
+      "status": "Em análise",
+      "tipo": "ferias",
+      "status_request": "pending",
+      "id_user": 3,
+      "id": 8
+    }
+  ]
+}
