@@ -39,16 +39,16 @@ server.post("/login", (req, res) => {
 
 // ---------------- PONTO ----------------
 
-server.post("/ponto/ajuste", (req, res) => {
-    const ajuste = req.body
-    const db = router.db.getState()
+// server.post("/ponto/ajuste", (req, res) => {
+//     const ajuste = req.body
+//     const db = router.db.getState()
 
-    ajuste.id = db.ponto.length + 1
-    db.ponto.push(ajuste)
+//     ajuste.id = db.ponto.length + 1
+//     db.ponto.push(ajuste)
 
-    router.db.setState(db)
-    res.json({ message: "Ajuste solicitado", ajuste })
-})
+//     router.db.setState(db)
+//     res.json({ message: "Ajuste solicitado", ajuste })
+// })
 
 server.delete("/ponto/:id", (req, res) => {
     const id = Number.parseInt(req.params.id)
