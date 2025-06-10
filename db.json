@@ -61,20 +61,6 @@
       "resultado": "00:00",
       "status_request": "idle",
       "justify": ""
-    },
-    {
-      "id_user": 1,
-      "data": "2025-05-27",
-      "marcacao": [
-        "16:00",
-        "16:00",
-        "16:00",
-        "16:48"
-      ],
-      "resultado": "-07:12",
-      "status_request": "idle",
-      "justify": "",
-      "id": 3
     }
   ],
   "working_days": [
